@@ -21,11 +21,11 @@ function App() {
     <div>
     {
         products.map((product,key)=>{
-        
+          
           return(
             <div key={key} className='card-container'>
               <div className='card'>
-                <img src={product.images} alt="" width={300}/>
+                <img src={product.images} alt={product.title} width={300}/>
                 <p className='title'>{product.title}</p>
                 <p className='description'>{product.description}</p>
                 <button>Satın Al {product.price}₺</button>
